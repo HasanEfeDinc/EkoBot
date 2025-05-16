@@ -1,0 +1,199 @@
+.profilepage-container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f7f8fc;
+    font-family:"Poppins","Segoe UI",Tahoma,Arial,sans-serif;
+  }
+  
+  .profile-card {
+    position: relative;
+    background: #fff;
+    border-radius: 24px;
+    box-shadow: 0 4px 24px rgba(80, 60, 200, 0.08);
+    padding: 3rem 2rem 2rem 2rem;
+    max-width: 400px;
+    width: 100%;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+  }
+  
+  .profile-header-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 150px; 
+    width: 100%;
+    background-color: #eceefd;
+    z-index: 0;
+  }
+  
+  .profile-avatar-bg {
+    background: #fff;
+    border-radius: 50%;
+    width: 110px;
+    height: 110px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 1rem;
+    z-index: 1;
+    position: relative;
+  }
+  
+  .profile-avatar-img {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .profile-main-info {
+    text-align: center;
+    margin-bottom: 1.2rem;
+    z-index: 1;
+  }
+  
+  .profile-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #222;
+    margin-bottom: 0.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+  .profile-verified {
+    color: #3b82f6;
+    font-size: 1.2rem;
+  }
+  .profile-email {
+    font-size: 1rem;
+    color: #888;
+    margin-bottom: 0.5rem;
+  }
+  
+  .profile-edit-btn {
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    background: #6f55ff;
+    color: #fff;
+    border: none;
+    border-radius: 12px;
+    padding: 0.5rem 1.2rem;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.2s;
+    z-index: 2;
+  }
+  .profile-edit-btn:hover {
+    background: #5a45d6;
+  }
+  
+  .profile-details {
+    width: 100%;
+    margin-top: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.1rem;
+    font-size: 1.5rem;
+  }
+  .profile-label {
+    color: #888;
+    font-weight: 500;
+    min-width: 90px;
+    display: inline-block;
+  }
+  .profile-value {
+    color: #222;
+    font-weight: 500;
+    margin-left: 0.5rem;
+  }
+  .profile-value.ekobot {
+    color: #6f55ff;
+    font-weight: 600;
+  }
+  
+  .profile-back-btn {
+    margin-top: 14px;
+    margin-left: 24px;
+    position: absolute;
+    top:1.5rem;          
+    left:1.5rem;
+    width: 200px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    cursor: pointer;
+    z-index: 2;
+    background: #fff;
+    padding: 0.4rem 1rem 0.4rem 0.6rem;
+    border-radius: 18px;
+    box-shadow: 0 2px 8px rgba(80, 60, 200, 0.08);
+    transition: box-shadow 0.2s, transform 0.2s;
+
+  }
+  .profile-back-btn:hover {
+    box-shadow: 0 4px 16px rgba(80, 60, 200, 0.16);
+    transform: translateY(-2px);
+  }
+ 
+  .profile-back-icon {
+    width: 20px;
+    height: 20px;
+    display: block;
+  }
+  .profile-back-text {
+    color: #6f55ff;
+    font-weight: 600;
+    font-size: 1rem;
+    letter-spacing: 0.01em;
+  }
+
+  .profile-logout-btn {
+    position: absolute;
+    bottom: 1.5rem;
+    left: 1.5rem;
+    width: 200px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    cursor: pointer;
+    z-index: 2;
+    background: #fff;
+    padding: 0.4rem 1rem 0.4rem 0.6rem;
+    border-radius: 18px;
+    box-shadow: 0 2px 8px rgba(80, 60, 200, 0.08);
+    transition: box-shadow 0.2s, transform 0.2s;
+  }
+  .profile-logout-btn:hover {
+    box-shadow: 0 4px 16px rgba(80, 60, 200, 0.16);
+    transform: translateY(-2px);
+  }
+  
+  .profile-logout-icon {
+    width: 20px;
+    height: 20px;
+    display: block;
+  }
+  .profile-logout-text {
+    color: #6f55ff;        /* Geri Dön ile aynı renk */
+    font-weight: 600;
+    font-size: 1rem;
+    letter-spacing: 0.01em;
+  }
+  

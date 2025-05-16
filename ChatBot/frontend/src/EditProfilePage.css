@@ -1,0 +1,156 @@
+/* ---------- SAYFA YAPISI ---------- */
+*{margin:0;padding:0;box-sizing:border-box}
+
+.page-wrapper{
+  display:flex;
+  flex-direction:column;
+  min-height:100vh;
+  background:#f7f8fc;
+  font-family:"Poppins","Segoe UI",Tahoma,Arial,sans-serif;
+}
+
+/* ---------- HEADER ---------- */
+.header{
+  flex:5;
+  display:flex;
+  align-items:center;
+  justify-content:flex-start;
+  background:transparent;
+}
+.back-button-wrapper {
+  box-shadow: 0 2px 8px rgba(80, 60, 200, 0.08);
+  background: #fff;
+  border-radius: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 180px;
+  height: 48px;
+  margin-left: 40px;
+  transition: background 0.25s, transform 0.25s, box-shadow 0.25s;
+}
+
+.back-button-wrapper:hover {
+  background: rgba(255, 255, 255, 0.45);
+  box-shadow: 0 4px 16px rgba(80, 60, 200, 0.16);
+  transform: translateY(-2px);
+}
+.back-btn{
+  width:100%;
+  height:100%;
+  background: #fff;
+  border:none;
+  border-radius:14px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:8px;
+  cursor:pointer;
+  transition:background .25s,transform .25s;
+  color: #6f55ff;
+  font-weight: 600;
+}
+
+.back-btn span{
+  font-size:1rem;
+  font-weight:600;
+  color: #6f55ff;
+}
+.back-btn img{width:20px;height:20px;object-fit:contain}
+
+/* ---------- PROFİL KARTI ---------- */
+.profile-container{
+  flex:95;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:40px 0;
+}
+.edit-profile-card{
+
+  background:#fff;
+  border-radius:24px;
+  box-shadow:0 4px 24px rgba(80,60,200,.08);
+  padding:2.5rem 2.5rem 2rem;
+  max-width:400px;
+  width:100%;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  height: 820px;
+}
+.avatar-section{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  margin-bottom:1.2rem;
+}
+.profile-avatar{
+  width:130px;height:130px;
+  border-radius:50%;
+  background:#ede7fe;
+  object-fit:cover;
+}
+.camera-btn{
+  margin-top:.6rem;width:50px;height:35px;
+  border-radius:25px;background:#e0dfe7;
+  display:flex;align-items:center;justify-content:center;
+  cursor:pointer;transition:background .2s;
+}
+.camera-btn:hover{opacity:.8}
+.camera-input{display:none}
+.camera-icon-btn{width:22px;height:22px}
+.profile-name{
+  font-size:1.9rem;font-weight:550;color:#6f55ff;
+  margin-bottom:1.5rem;text-align:center;
+}
+
+/* ---------- FORM ---------- */
+.profile-form{
+  width:100%;
+  display:flex;
+  flex-direction:column;
+  gap:1.1rem;
+}
+.profile-form label{
+  font-size:1rem;color:#444;font-weight:500;
+  display:flex;flex-direction:column;gap:.4rem;
+}
+.profile-form input{
+  padding:.7rem 1rem;border-radius:12px;
+  border:1px solid #e0e0e0;
+  font-size:1rem;background:#fafaff;
+  transition:border .2s;
+}
+.profile-form input:focus{
+  border:1.5px solid #6f55ff;outline:none;
+}
+
+/* ---------- ŞİFRE ALANI ---------- */
+.pwd-label{position:relative}
+.pwd-wrapper{position:relative}
+.pwd-wrapper input{width:100%;padding-right:80px}
+.pwd-toggle{
+  position:absolute;right:8px;top:50%;transform:translateY(-50%);
+  background:#eceefd;color:#6f55ff;border:none;
+  border-radius:18px;padding:4px 12px;
+  font-size:.8rem;font-weight:500;cursor:pointer;
+  transition:background .2s;
+}
+.pwd-toggle:hover{background:#e1e3ff}
+.pwd-toggle.cancel{background:#ffdede;color:#c33}
+.pwd-toggle.cancel:hover{background:#ffcccc}
+.disabled input{opacity:.45;pointer-events:none}
+
+/* ---------- BUTON / MESAJ ---------- */
+.save-btn{
+  margin-top:.7rem;background:#6f55ff;color:#fff;
+  border:none;border-radius:12px;padding:.9rem 0;
+  font-size:1.1rem;font-weight:600;cursor:pointer;
+  transition:background .2s;
+}
+.save-btn:hover{background:#5a45d6}
+.saved-msg{
+  margin-top:.7rem;color:#6f55ff;font-weight:500;
+  text-align:center;font-size:1rem;
+}
